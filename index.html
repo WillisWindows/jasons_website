@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willis Windows</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">W</div>
+            <div class="logo-text">Willis Windows</div>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+            <a href="#" class="hamburger-menu" onclick="openHamburgerMenu()">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+</svg>
+
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="hero-text">
+                <h1>Jason Willis</h1>
+                <p>
+                Meet Willis, a skilled window cleaner with years of experience. <span>As a self-employed professional, he’s known for delivering top-notch, reliable service. Willis specializes in residential and commercial window cleaning, leaving windows spotless.
+                He also offers gutter cleaning and roof repairs, ensuring your home stays in great condition. Whether it’s a quick fix or a full cleaning, Willis provides efficient, affordable solutions tailored to your needs.
+                Focused on customer satisfaction, </span>Willis ensures your property looks its best.
+                </p>
+                <div class="call-to-action">
+                    <a href="mailto:https://www.willis.windowcleaning1@gmail.com" class="button">Contact Me</a>
+                    <a id="number" href="tel:+447494131423">07494 131423</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/williswindowcleanin/" target="_blank">
+                        <img src="images/fbook_icon.png" alt="facebook logo">
+                    </a>
+                    <a href="mailto:https://www.willis.windowcleaning1@gmail.com" target="_blank">
+                        <img src="images/email_icon.png" alt="email logo">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="images/hero-img.jpg" alt="">
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h2>What services do I offer</h2>
+            <div class="services-container">
+                <div class="left-column">
+                    <h3>Window Wash</h3>
+                    <div class="window-container">
+                        <img src="images/window-before.jpg" alt="windows before">
+                        <img src="images/window_after.jpg" alt="windows after">
+                    </div>
+                    <h3>Gutter Clean</h3>
+                    <div class="gutter-container">
+                        <img src="images/gutter_before.jpg" alt="windows before">
+                        <img src="images/gutter_after.jpg" alt="windows after">
+                    </div>
+                    <h3>Tile Repair</h3>
+                    <div class="tile-container">
+                        <img src="images/tile_before.jpg" alt="windows before">
+                        <img src="images/tile_after.jpg" alt="windows after">
+                    </div>
+                </div>
+                <div class="right-column">
+                    <h3>About me</h3>
+                    <p>Willis Windows is a family-owned business <span>based in Malvern, UK. With a friendly and personal approach, we take pride in serving our local community. We treat every home or business like our own,</span> ensuring top-quality service and customer care you can trust.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="bento container">
+			<div class="work-text">
+                <small>Latest Projects</small>
+                <h2>
+                    Portfolio of Completed Work
+                </h2>
+            </div>
+			<div class="bento-grid">
+                <div class="bento-item">
+                    <img src="./images/bento_1.jpg" alt="conservetory" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_2.jpg" alt="window" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_3.jpg" alt="solar panels" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_4.jpg" alt="roof tile repair" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_5.jpg" alt="conservetory" width="100%" />
+                </div>
+                <div class="bento-item">
+                    <img src="./images/bento_6.jpg" alt="solar panels" width="100%" />
+                </div>
+            </div>            
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Willis Windows. All rights reserved. &trade;</p>
+        </div>
+    </footer>    
+</body>
+</html>
