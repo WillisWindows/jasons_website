@@ -230,7 +230,6 @@ nav a:hover {
 .right-column {
     display: flex;
     flex-direction: column;
-    padding: 30px;
     max-width: 50%;
     align-items: center;
     text-align: center;
