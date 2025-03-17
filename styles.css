@@ -1,35 +1,32 @@
+/* General Reset */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Body background remains unchanged */
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    /* background-color: rgba(17, 14, 14, 0.2); */
+    background-color: #f4f4f4;
     background-image: url(images/1.jpg);
     background-size: cover;
 }
 
+/* Header: added background for improved nav contrast */
 header {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     margin: auto;
     max-width: 1440px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.95); /* Light, nearly opaque background */
 }
 
-main {
-    max-width: 1440px;
-    margin: auto;
-}
-
-
-/* .logo-container */
+/* Logo Container */
 .logo-container {
     display: flex;
     padding: 10px;
@@ -37,7 +34,7 @@ main {
     color: rgb(10, 40, 40);
 }
 
-/* .logo inside .logo-container */
+/* Logo */
 .logo {
     display: flex;
     background-color: rgb(82, 80, 80);
@@ -52,59 +49,63 @@ main {
     justify-content: center;
 }
 
-/* .logo-text inside .logo-container */
+/* Logo Text: explicit dark color for readability */
 .logo-text {
     flex: 1;
     font-weight: 500;
+    color: #000;  /* Ensures high contrast on light header */
 }
 
+/* Navigation */
 nav {
     display: flex;
 }
 
-/* ul inside nav */
+/* Nav list styling */
 nav ul {
     display: flex;
     list-style-type: none;
     align-items: center;
 }
 
-/* li inside ul */
-nav ul li {
-    display: inline-block;
-}
-
-/* a inside li */
+/* Nav links with explicit color */
 nav ul li a {
     display: inline-block;
     padding: 15px 25px;
     text-decoration: none;
-    color: rgb(45, 43, 43);
+    color: #000; /* dark text on white background */
 }
 
-/* hamburger menu */
-.hamburger-menu{
-    display: none;
-    color: black;
-    padding: 10px;
-}
-
+/* Hover state for nav links */
 nav a:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
 
-/* Hero Section */
+/* Hamburger menu styling */
+.hamburger-menu {
+    display: none;
+    color: black;
+    padding: 10px;
+}
 
+/* Main container remains unchanged */
+main {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* Hero Section */
 .hero-section {
     display: flex;
     max-width: 1440px;
-    margin: auto;
     margin: 30px;
 }
 
+/* Hero Text: dark overlay for high contrast */
 .hero-text {
-    background-color: rgba(9, 198, 231, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);  /* Dark overlay */
+    color: #fff;                          /* White text */
     border-radius: 50px;
     padding: 30px;
     margin: 30px;
@@ -113,62 +114,69 @@ nav a:hover {
     justify-content: center;
 }
 
+/* Hero Heading */
 .hero-text h1 {
     font-size: 64px;
     margin-bottom: 10px;
 }
 
+/* Button styles: updated for higher contrast */
 .button {
     display: inline-block;
     padding: 10px 30px;
-    background-color: blue;
-    color: aliceblue;
+    background-color: #00509e; /* Dark blue */
+    color: #fff;             /* White text */
     text-decoration: none;
     border-radius: 10px;
     transition: ease 0.3s all;
 }
 
 .button:hover {
-    background-color: black;
+    background-color: #003f7f;  /* Even darker on hover */
 }
 
+/* Call-to-Action container */
 .call-to-action {
     display: flex;
     margin: 20px 0;
 }
 
+/* Call-to-Action links */
 .call-to-action a {
     margin-right: 10px;
 }
 
+/* Phone number styling */
 #number {
     align-items: center;
     justify-content: center;
     padding: 10px;
     font-weight: 900;
-    background-color: blue;
-    color: aliceblue;
+    background-color: #00509e; /* Consistent dark blue */
+    color: #fff;
     border-radius: 10px;
     text-decoration: none;
 }
 
 #number:hover {
-    background-color: black;
+    background-color: #003f7f;
     transition: ease 0.3s all;
 }
 
-.social-links a{
+/* Social links spacing */
+.social-links a {
     margin-right: 20px;
     margin-bottom: 10px;
 }
 
+/* Hero Image */
 .hero-img {
-    padding:30px;
+    padding: 30px;
     margin: 30px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     background-color: rgba(225, 247, 27, 0.4);
 }
 
@@ -178,63 +186,66 @@ nav a:hover {
     max-height: 400px;
 }
 
+/* Social icons */
 .social-links img {
     width: 50px;
 }
 
-/* services section */
+/* Services Section */
 .services {
     max-width: 1440px;
     margin: auto;
     padding: 30px;
-
 }
 
+/* Services Heading: ensure dark text for contrast */
 .services h2 {
     font-weight: 900;
     padding: 30px;
     font-size: 64px;
     margin-bottom: 10px;
     text-align: center;
+    color: #000;
 }
 
+/* Services Container: darker teal background with white text */
 .services-container {
     display: flex;
-    background-color: rgba(0, 139,139, 0.7);
+    background-color: rgba(0, 139, 139, 0.85); /* Increased opacity */
+    color: #fff;
     padding: 30px;
     border-radius: 50px;
     justify-content: space-around;
 }
 
-.left-column {
-    padding: 0 30px;
+/* Left Column Headings */
+.left-column h3 {
+    padding: 30px;
+    text-align: center;
+    color: #fff;
 }
 
+/* Containers for images in services */
 .window-container, .gutter-container, .tile-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-
-.left-column h3 {
-    padding: 30px;
-    text-align: center;
-}
-
 .left-column img {
     width: 30%;
     height: 100%;
     border-radius: 20px;
-
 }
 
+/* Right Column: About Me Section */
 .right-column {
     display: flex;
     flex-direction: column;
     max-width: 50%;
     align-items: center;
     text-align: center;
+    color: #fff;
 }
 
 .right-column h3 {
@@ -243,13 +254,12 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.right-column p{
+.right-column p {
     font-size: 32px;
     padding: 30px 0;
-
 }
 
-/* Bento Box */
+/* Bento (Portfolio) Section */
 .bento .bento-grid {
     display: grid;
     grid-gap: 30px;
@@ -258,17 +268,22 @@ nav a:hover {
     height: 960px;
 }
 
+/* Work Text: add a light overlay for better contrast */
 .work-text {
     font-weight: 900;
     padding: 30px;
     font-size: 64px;
     margin-bottom: 10px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    color: #000; /* Dark text */
+    border-radius: 10px;
 }
 
+/* Bento Items */
 .bento .bento-item {
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
@@ -287,6 +302,7 @@ nav a:hover {
     transform: scale(1.2);
 }
 
+/* Grid placement for bento items */
 .bento .bento-item:nth-child(1) {
     grid-column: span 2;
     grid-row: span 2;
@@ -317,10 +333,10 @@ nav a:hover {
     grid-row: span 3;
 }
 
-/* footer  */
+/* Footer styling remains unchanged */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 20px;
     text-align: center;
     font-size: 14px;
@@ -333,8 +349,7 @@ footer {
     margin: 0;
 }
 
-
-/* responsive design for tablets */
+/* Responsive design remains, with contrast changes inherited */
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
@@ -375,11 +390,8 @@ footer {
         font-size: 36px;
         font-weight: 600;
     }
-
 }
 
-
-/* responsive design for phone */
 @media (max-width: 760px){
     .hero-section {
         padding: 0;
@@ -422,7 +434,6 @@ footer {
 
     nav ul.active {
         display: flex;
-        
     }
 
     .hamburger-menu{
@@ -432,11 +443,7 @@ footer {
         right: 20px;
     }
 
-    .hero-text span {
-        display: none;
-    }
-
-    .right-column span {
+    .hero-text span, .right-column span {
         display: none;
     }
 
@@ -450,8 +457,6 @@ footer {
     }
 
     .work-text {
-        font-weight: 400
+        font-weight: 400;
     }
-
 }
-
